@@ -7,7 +7,7 @@ import org.openqa.selenium.InvalidElementStateException;
 
 import com.yourcompany.Pages.LoginPage;
 
-public class LoginTest extends SampleSauceTestBase {
+public class LoginTest extends SauceTestBase {
 
     public LoginTest(String os,
                                      String version, String browser, String deviceName, String deviceOrientation) {

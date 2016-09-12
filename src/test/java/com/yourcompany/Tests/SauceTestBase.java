@@ -32,7 +32,7 @@ import com.saucelabs.common.SauceOnDemandSessionIdProvider;
  */
 @Ignore
 @RunWith(ConcurrentParameterized.class)
-public class SampleSauceTestBase implements SauceOnDemandSessionIdProvider {
+public class SauceTestBase implements SauceOnDemandSessionIdProvider {
 
     public String username = System.getenv("SAUCE_USERNAME");
     public String accesskey = System.getenv("SAUCE_ACCESS_KEY");
@@ -106,7 +106,7 @@ public class SampleSauceTestBase implements SauceOnDemandSessionIdProvider {
      * @param deviceOrientation
      */
 
-    public SampleSauceTestBase(String os, String version, String browser, String deviceName, String deviceOrientation) {
+    public SauceTestBase(String os, String version, String browser, String deviceName, String deviceOrientation) {
         super();
         this.os = os;
         this.version = version;
